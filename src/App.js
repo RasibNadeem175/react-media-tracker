@@ -1,4 +1,9 @@
+import './App.css'
 import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import TestClock from "./components/TestClock";
+import Toggle from "./components/TestToggle"
+import BookData from "./data.json"
 
 function App() {
   const name = 'Brad'
@@ -6,9 +11,11 @@ function App() {
   return (
     <div className="container">
      <Header />
-     <h1>Hello From React</h1>
-     <h1>Hello {x ? 'yes': 'no'}</h1>
-    </div>
+     <h1>Hello From App.js</h1>
+     <Toggle/>
+     <TestClock/>
+     <SearchBar placeholder="Enter a Book Name..." data={BookData}/>
+  </div>
   );
 }
 

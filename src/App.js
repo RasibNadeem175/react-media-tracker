@@ -1,6 +1,6 @@
 import './App.css'
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/searchbar/SearchBar";
 import TestClock from "./components/TestClock";
 import Toggle from "./components/TestToggle"
 import BookData from "./data.json"

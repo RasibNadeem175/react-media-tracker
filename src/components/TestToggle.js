@@ -7,10 +7,7 @@ class Toggle extends React.Component {
     constructor(props) {
         super(props);
         this.state = {isToggleOn: true};
-
-        //this is binding is necessary to take 'this' work in callbacks
         this.handleClick = this.handleClick.bind(this)
-
     }
 
     handleClick() {

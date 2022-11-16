@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-.App {
+.App .content {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -7,8 +7,11 @@
   flex-direction: column;
   font-family: "Nunito", sans-serif;
 }
-body {
+.App {
   background-image: linear-gradient(90deg, #410076, #8820dd);
+}
+
+body {
   padding: 0;
   margin: 0;
 }

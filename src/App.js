@@ -1,20 +1,21 @@
 import './App.css'
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import SearchBar from "./components/searchbar/SearchBar";
 import TestClock from "./components/TestClock";
 import Toggle from "./components/TestToggle"
 import BookData from "./data.json"
+import RatingBox from "./components/ratingbox/RatingBox"
 
 function App() {
-  const name = 'Brad'
-  const  x = true
   return (
-    <div className="container">
+    <div className="App">
      <Header />
-     <h1>Hello From App.js</h1>
-     <Toggle/>
-     <TestClock/>
      <SearchBar placeholder="Enter a Book Name..." data={BookData}/>
+     <div className="content">
+      <Toggle/>
+      <TestClock/>
+     </div>
+
   </div>
   );
 }
